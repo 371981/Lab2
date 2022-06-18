@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.lab2.HelloController">
+   <children>
+      <Button fx:id="btnM" layoutX="64.0" layoutY="61.0" mnemonicParsing="false" onAction="#onHelloButtonClick" text="Kliknij mnie">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtLicznik" layoutX="197.0" layoutY="62.0" onAction="#onHelloButtonClick" />
+      <Text layoutX="138.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wysokość +" />
+      <Text layoutX="140.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wysokość -" />
+      <TextField fx:id="wysokoscLicznik" layoutX="256.0" layoutY="207.0" onInputMethodTextChanged="#inWysokosc" />
+      <Button fx:id="licz" layoutX="352.0" layoutY="344.0" mnemonicParsing="false" onAction="#clickLicz" text="LICZ" />
+      <TextField fx:id="wynik" layoutX="160.0" layoutY="375.0" onAction="#clickLicz" prefHeight="25.0" prefWidth="232.0" promptText="Pole powierzchni całkowitej" />
+      <Button fx:id="pPlus" layoutX="212.0" layoutY="108.0" mnemonicParsing="false" onAction="#promienPlus" text="+" />
+      <Button fx:id="pMinus" layoutX="212.0" layoutY="142.0" mnemonicParsing="false" onAction="#promienMinus" prefHeight="27.0" prefWidth="25.0" text="-" />
+      <Text layoutX="143.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Promień +" />
+      <Text layoutX="145.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Promień -" />
+      <TextField fx:id="promLicznik" layoutX="256.0" layoutY="120.0" />
+      <Button fx:id="pPlusWys" layoutX="212.0" layoutY="188.0" mnemonicParsing="false" onAction="#wysokoscPlus" text="+" />
+      <Button fx:id="pMinusWys" layoutX="212.0" layoutY="220.0" mnemonicParsing="false" onAction="#wysokoscMinus" prefHeight="27.0" prefWidth="25.0" text="-" />
+      <Text layoutX="142.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grubość +" />
+      <Text layoutX="143.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grubość -" />
+      <Button fx:id="pPlusGrub" layoutX="212.0" layoutY="266.0" mnemonicParsing="false" onAction="#gruboscPlus" text="+" />
+      <Button fx:id="pMinusGrub" layoutX="212.0" layoutY="297.0" mnemonicParsing="false" onAction="#gruboscMinus" prefHeight="27.0" prefWidth="25.0" text="-" />
+      <TextField fx:id="gruboscLicznik" layoutX="256.0" layoutY="279.0" onInputMethodTextChanged="#inWysokosc" />
+      <Text layoutX="419.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cm" />
+      <Text layoutX="419.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cm" />
+      <Text layoutX="419.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cm" />
+      <Text layoutX="24.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Srednica wewnętrzna" wrappingWidth="114.0" />
+      <Text layoutX="24.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wysokość / długość" />
+      <Text layoutX="19.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Srednica zewnętzna (podaj o przynajmniej 1 więcej niż średnica wewnętrzna)" wrappingWidth="123.306640625" />
+      <TextField fx:id="wynikWaga" layoutX="160.0" layoutY="461.0" onAction="#clickLicz" prefHeight="25.0" prefWidth="232.0" promptText="Waga materiału - blacha stalowa " />
+      <Text layoutX="408.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cm ^2" wrappingWidth="52.318359375" />
+      <Text layoutX="415.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="kg" />
+      <TextField fx:id="wynikCena" layoutX="160.0" layoutY="506.0" onAction="#clickLicz" prefHeight="25.0" prefWidth="232.0" promptText="CENA">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="413.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="zł" />
+      <TextField fx:id="wynikObj" layoutX="160.0" layoutY="416.0" onAction="#clickLicz" prefHeight="25.0" prefWidth="232.0" promptText="Objętość materłu" />
+      <Text layoutX="408.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cm ^3" wrappingWidth="52.318359375" />
+      <Text layoutX="53.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LAB 2 zadanie z counterem" />
+   </children>
+</AnchorPane>
